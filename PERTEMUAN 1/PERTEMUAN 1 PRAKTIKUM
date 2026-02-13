@@ -1,1 +1,66 @@
+<html>
+  <head>
+    <title>Lamaran Pekerjaan</title>
+  </head>
+  <body>
+    <h1>Lamaran Pekerjaan</h1>
+    <img src="PASS FOTO.jpeg" alt="Test Image" width="120" height="150" />
+    
+    <p>Kepada Yth,</p>
+    <p><b>PT.PERTAMINA</b><br>
+      Jalan Sudirman</p>
+
+      <p>Dengan hormat,</p>
+      <p>Saya yang bertanda tangan di bawah ini:</p>
+    
+      <table>
+        <table border="1">
+        <tr>
+            <th>Nama</th>
+            <td>Muhammad Dafi Ramadhan</td>
+        </tr>
+        <tr>
+            <th>Tempat, Tanggal Lahir</th>
+            <td>Bogor, 24 Oktober 2005</td>
+        </tr>
+        <tr>
+            <th>Pendidikan</th>
+            <td>S1 Teknik Informatika</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>dafi6506@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Telepon</th>
+            <td>0896-7395-9647</td>
+        </tr>
+      </table>
+
+      <p>
+        Saya ingin mengajukan lamaran untuk posisi <b>Desain digital</b> di PT PERTAMINA
+        Saya memiliki keterampilan dalam pengembangan desain dan pengalaman dalam berbagai proyek
+      </p>
+    
+    <p><b>KEMAMPUAN</p></b>
+      <ul type="square">
+      <li>Adobe Photoshop & Canva</li>
+      <li>Microsoft Word</li>
+      <li>Photografi</li>
+    </ul>
+    
+    <p>
+      Berikut adalah tautan ke portofolio saya:<br>
+      <a href="https://www.google.com" target="_blank">Github portofolio</a>
+    </p>
+
+    <p>
+      Saya siap untuk wawancara kapan saja. Terima kasih atas perhatian Anda.
+    </p>
+
+    <p>Hormat saya,</p>
+    <p><b>Muhammad Dafi Ramadhan</b></p>
+  
+  </body>
+</html>
 
