@@ -1,1 +1,80 @@
 
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diskon Pembayaran Mahasiswa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .box {
+        width: 400px;
+        margin: 20px auto;
+        border: 2px solid black;
+        padding: 15px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Input Data Mahasiswa</h3>
+
+      <input type="text" id="npm" placeholder="NPM" />
+      <input type="text" id="nama" placeholder="Nama" />
+      <input type="text" id="prodi" placeholder="Prodi" />
+      <input type="number" id="semester" placeholder="Semester" />
+      <input type="number" id="ukt" placeholder="Biaya UKT" />
+
+      <button onclick="hitung()">Hitung</button>
+    </div>
+
+    <div class="box" id="output">
+      <h3>Luaran yang diharuskan</h3>
+      <p id="hasil"></p>
+    </div>
+
+    <script>
+      function hitung() {
+        let npm = document.getElementById("npm").value;
+        let nama = document.getElementById("nama").value;
+        let prodi = document.getElementById("prodi").value;
+        let semester = parseInt(document.getElementById("semester").value);
+        let ukt = parseInt(document.getElementById("ukt").value);
+
+        let diskon = 0;
+
+        // kondisi sesuai soal
+        if (ukt >= 5000000) {
+          diskon = 10;
+        }
+
+        if (ukt >= 5000000 && semester > 8) {
+          diskon = 15;
+        }
+
+        let potongan = (diskon / 100) * ukt;
+        let bayar = ukt - potongan;
+
+        document.getElementById("hasil").innerHTML = `
+        NPM : ${npm} <br>
+        NAMA : ${nama} <br>
+        PRODI : ${prodi} <br>
+        SEMESTER : ${semester} <br>
+        BIAYA UKT : Rp. ${ukt.toLocaleString()} <br>
+        DISKON : ${diskon}% <br>
+        YANG HARUS DIBAYAR : Rp. ${bayar.toLocaleString()}
+    `;
+      }
+    </script>
+  </body>
+</html>
